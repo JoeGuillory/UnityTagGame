@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using DG.Tweening;
+
 
 public class PlatformEasing : MonoBehaviour
 {
@@ -13,11 +15,16 @@ public class PlatformEasing : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if(transform.localPosition.x == -9)
+        {
+            transform.DOMoveX(9, 3);
+        }
+
+        if(transform.localPosition.x == 9)
+        {
+            transform.DOMoveX(-9, 3);
+        }
     }
 
-    private float Easing()
-    {
-        return 0;
-    }
+   
 }
