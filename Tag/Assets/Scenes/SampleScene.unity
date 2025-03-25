@@ -226,7 +226,7 @@ PrefabInstance:
     - target: {fileID: 7437075106643483086, guid: a62943808f84efb48a28c1da9ed8d9ef,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 14.41
+      value: 14
       objectReference: {fileID: 0}
     - target: {fileID: 7437075106643483086, guid: a62943808f84efb48a28c1da9ed8d9ef,
         type: 3}
@@ -1177,6 +1177,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Player2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6702817153812070461, guid: c89d02bbdeec09f4dbe9de7f20dd78c1,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7488309169504993212, guid: c89d02bbdeec09f4dbe9de7f20dd78c1,
         type: 3}

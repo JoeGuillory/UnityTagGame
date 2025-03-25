@@ -17,6 +17,8 @@ public class PlayerController : MonoBehaviour
     private float _jumpPower = 10.0f;
 
     private Rigidbody _rigidbody;
+    private SphereCollider _sphereCollider;
+    private bool _isGrounded = false;
     private float _moveInput;
 
     public bool IsPlayerOne { get { return _playerOne; } }
@@ -25,6 +27,7 @@ public class PlayerController : MonoBehaviour
     void Start()
     {
         _rigidbody = GetComponent<Rigidbody>();
+        _sphereCollider = GetComponent<SphereCollider>();
         
     }
 
