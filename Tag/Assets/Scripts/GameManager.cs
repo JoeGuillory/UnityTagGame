@@ -69,9 +69,9 @@ public class GameManager : MonoBehaviour
         if (_gameWon)
             return;
         if (_player1Timer.TimerRemaining <= 0)
-            Win("Player 1 Wins!");
-        else if (_player2Timer.TimerRemaining <= 0)
             Win("Player 2 Wins!");
+        else if (_player2Timer.TimerRemaining <= 0)
+            Win("Player 1 Wins!");
 
     }
 
