@@ -73,6 +73,9 @@ public class GameManager : MonoBehaviour
         else if (_player2Timer.TimerRemaining <= 0)
             Win("Player 1 Wins!");
 
+        if (Input.GetAxisRaw("Cancel") == 1)
+            Application.Quit();
+
     }
 
     private void Win(string winText)
